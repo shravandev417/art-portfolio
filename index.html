@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shravan Dev — Portfolio</title>
+<meta name="description" content="Art portfolio of Shravan Dev — traditional works and 3D renders.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="#top" class="wordmark">Shravan Dev</a>
+  <nav class="site-nav">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <h1>Shravan Dev</h1>
+    <!-- Edit this line to describe yourself in one sentence -->
+    <p class="hero-sub">Visual artist working across traditional media and 3D — built in Blender.</p>
+  </section>
+
+  <section id="work" class="work-section">
+    <div class="section-heading">
+      <h2>Selected Work</h2>
+      <div class="filters" role="tablist" aria-label="Filter artwork by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="traditional">Traditional</button>
+        <button class="filter-btn" data-filter="digital">Digital</button>
+        <button class="filter-btn" data-filter="3d-modeling">3D / Blender</button>
+        <button class="filter-btn" data-filter="unfinished">Unfinished</button>
+      </div>
+    </div>
+    <div id="gallery" class="gallery"></div>
+  </section>
+
+  <section id="statement" class="statement-section">
+    <h2>Artist Statement</h2>
+    <!-- Replace with your own 2-4 sentences: what you make, why, what you're exploring -->
+    <p>
+      I work between two worlds — the immediacy of traditional drawing and painting, and the
+      precision of 3D modeling in Blender. Moving between the two keeps me honest: traditional
+      work teaches me to see and render form by hand, while 3D lets me build environments and
+      lighting that would be impossible to construct any other way. Across both, I'm drawn to
+      [replace with your actual focus — e.g. lighting, character design, still life, environments].
+    </p>
+  </section>
+
+  <section id="about" class="about-section">
+    <h2>About</h2>
+    <!-- Replace with a short bio: grade/year, how long you've been making art, any awards or exhibitions -->
+    <p>
+      I'm a student artist based in [your city], working primarily in [mediums]. I've been
+      drawing/painting for [X years] and started building in Blender in [year]. [Add anything
+      else worth mentioning — classes, awards, exhibitions, a favorite tool or technique.]
+    </p>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <ul class="contact-list">
+      <!-- Replace these with your real links -->
+      <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+      <li><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="resume.pdf" target="_blank" rel="noopener">Resume / CV (PDF)</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Shravan Dev</p>
+</footer>
+
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
+  <button class="lightbox-next" aria-label="Next">&#8250;</button>
+  <figure>
+    <img id="lightbox-img" src="" alt="">
+    <figcaption id="lightbox-caption"></figcaption>
+  </figure>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

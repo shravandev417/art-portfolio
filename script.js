@@ -3,6 +3,8 @@ const slides = Array.from(document.querySelectorAll('.work'));
 const prevBtn = document.querySelector('.arrow.prev');
 const nextBtn = document.querySelector('.arrow.next');
 const currentEl = document.getElementById('current');
+const categoryName = document.getElementById('category-name');
+const categoryLink = document.getElementById('category-link');
 
 document.getElementById('total').textContent = slides.length;
 nextBtn.classList.add('nudge');
@@ -22,6 +24,10 @@ function goTo(i) {
 function updateUi() {
   const i = currentIndex();
   currentEl.textContent = i + 1;
+  categoryName.textContent = slides[i].dataset.category || '';
+  const link = slides[i].dataset.link;
+  categoryLink.hidden = !link;
+  if (link) categoryLink.href = link;
   prevBtn.hidden = i === 0;
   nextBtn.hidden = i === slides.length - 1;
   if (i > 0) nextBtn.classList.remove('nudge');

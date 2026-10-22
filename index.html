@@ -3,94 +3,113 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shravan Dev — Portfolio</title>
-<meta name="description" content="Art portfolio of Shravan Dev — traditional works and 3D renders.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<title>Shravan Dev — Art Portfolio</title>
+<meta name="description" content="Art portfolio of Shravan Dev: drawing, painting, collage and 3D.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="name"><a href="#top">Shravan Dev &mdash; Art Portfolio</a></header>
+  <div class="counter" aria-live="polite"><span id="current">1</span> / <span id="total"></span></div>
 
-<header class="site-header">
-  <a href="#top" class="wordmark">Shravan Dev</a>
-  <nav class="site-nav">
-    <a href="#work">Work</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <main id="top" class="track">
+    <section class="work">
+      <figure>
+        <h2>Vitruvian Man: Reimagined, 2026</h2>
+        <img src="images/art-06.jpg" width="687" height="983" alt="Blue figure crouching inside a peacock-feather mandala" fetchpriority="high">
+        <figcaption>A reimagining of Da Vinci's Vitruvian Man; peacock plumage representing individuality juxtaposed with the Vitruvian form and pursuit of perfection; watercolor free-form juxtaposes industrial precision of pen.</figcaption>
+      </figure>
+    </section>
+    <section class="work">
+      <figure>
+        <h2>Dwayne "The Rock" Johnson, 2023</h2>
+        <img src="images/art-12.jpg" width="649" height="817" alt="Graphite portrait of a man with red watercolor splatter">
+        <figcaption>Portrait of Dwayne Johnson; sketch pencils and watercolor; explores rendering of face and clothing.</figcaption>
+      </figure>
+    </section>
+    <section class="work">
+      <figure>
+        <h2>Music is Life, 2026</h2>
+        <img src="images/art-03.jpg" width="1247" height="877" alt="Sketchbook spread collage of figures, hearts, eyes and map fragments">
+        <figcaption>Collage work; explores the connection between the body and the emotion of music.</figcaption>
+      </figure>
+    </section>
+    <section class="work">
+      <figure>
+        <h2>Color of Heat, 2026</h2>
+        <img src="images/art-01.jpg" width="2210" height="1570" alt="Sketchbook spread of thermal-colored hands in ink wash, pastel and acrylic">
+        <figcaption>Explores mixed media (dip pen, India ink, watercolor, soft pastel, alcohol marker, colored pencil); explores the way color can portray temperature, light, and emotion in skin; anatomy practice.</figcaption>
+      </figure>
+    </section>
+    <!-- LINOCUT: add the file as images/art-13.jpg, then uncomment and fill in the title, year, details and width/height
+    <section class="work">
+      <figure>
+        <h2>TITLE, YEAR</h2>
+        <img src="images/art-13.jpg" width="W" height="H" alt="Linocut print from my sustained investigation">
+        <figcaption>DETAILS</figcaption>
+      </figure>
+    </section>
+    -->
+    <section class="work">
+      <figure>
+        <h2>Girl with Red, 2026</h2>
+        <img src="images/art-11.jpg" width="607" height="885" alt="Graphite portrait of a woman with a paint-dripped hand over her face, on paint swatches and a map">
+        <figcaption>Collage work; a woman is depicted with flowing red liquid giving the impression of a hand; maps, red coloring, and a covered face suggest a secret.</figcaption>
+      </figure>
+    </section>
+    <section class="work">
+      <figure>
+        <h2>Flight in Days, 2026</h2>
+        <img src="images/art-02.jpg" width="1232" height="895" alt="Sketchbook spread of a leaf-and-foil collage with a lizard and a dragon">
+        <figcaption>Collage work; dragons' wings made with leaves (left) and aluminum foil (right), to juxtapose nature versus machine.</figcaption>
+      </figure>
+    </section>
+    <section class="work">
+      <figure>
+        <h2>Queen's Gambit, 2024</h2>
+        <img src="images/art-09.jpg" width="1316" height="739" alt="Blender render of a chessboard with white and black pieces">
+        <figcaption>3D render via Blender; full model and render created by me; depicts infamous Queen's Gambit scene.</figcaption>
+      </figure>
+    </section>
+    <section class="work">
+      <figure>
+        <h2>Blonde, 2025</h2>
+        <img src="images/art-10.jpg" width="554" height="576" alt="Graphite portrait of a bearded man in a jacket and tie">
+        <figcaption>Portrait of Frank Ocean in my stylized form; it contains inspiration from the works of Japanese animated media.</figcaption>
+      </figure>
+    </section>
+    <section class="work">
+      <figure>
+        <h2>Short n' Sweet, 2025</h2>
+        <img src="images/art-05.jpg" width="485" height="700" alt="Short n' Sweet poster-style graphite portrait on a blue watercolor ground">
+        <figcaption>Portrait of Sabrina Carpenter; soft pastel used to create heart prints in the background; sketch pencil used to render realistic hair with volume and detail.</figcaption>
+      </figure>
+    </section>
+    <section class="work">
+      <figure>
+        <h2>STRIKE!, 2024</h2>
+        <img src="images/art-08.jpg" width="1316" height="739" alt="Blender render of a bowling ball striking pins">
+        <figcaption>3D render via Blender; full model and render created by me; depicts dynamic bowling strike.</figcaption>
+      </figure>
+    </section>
+    <section class="work">
+      <figure>
+        <h2>Actaeon the Hunter, 2026</h2>
+        <img src="images/art-04.jpg" width="575" height="837" alt="Graphite figure study with an antler-like crest and handwritten notes">
+        <figcaption>Depicts Actaeon, a Greek hunter who saw Artemis bathing and was subsequently punished by being transformed into a deer; the form explores the guilt and pain of punishment as well as the attempt to maintain identity in change; explores the power of nature to heal and the ability of man to resist.</figcaption>
+      </figure>
+    </section>
+    <section class="work">
+      <figure>
+        <h2>Symbol of Hope, 2025</h2>
+        <img src="images/art-07.jpg" width="1021" height="720" alt="Pastel portrait of a man in front of a red and gold shield">
+        <figcaption>Portrait of David Corenswet as Superman; explored watercolor layering in red, yellow, then blue to build skin tone; soft pastel used to create a gradient in the background.</figcaption>
+      </figure>
+    </section>
+  </main>
 
-<main id="top">
+  <button class="arrow prev" aria-label="Previous piece" hidden>&#8249;</button>
+  <button class="arrow next" aria-label="Next piece">&#8250;</button>
 
-  <section class="hero">
-    <h1>Shravan Dev</h1>
-    <!-- Edit this line to describe yourself in one sentence -->
-    <p class="hero-sub">Visual artist working across traditional media and 3D — built in Blender.</p>
-  </section>
-
-  <section id="work" class="work-section">
-    <div class="section-heading">
-      <h2>Selected Work</h2>
-      <div class="filters" role="tablist" aria-label="Filter artwork by category">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="traditional">Traditional</button>
-        <button class="filter-btn" data-filter="digital">Digital</button>
-        <button class="filter-btn" data-filter="3d-modeling">3D / Blender</button>
-        <button class="filter-btn" data-filter="unfinished">Unfinished</button>
-      </div>
-    </div>
-    <div id="gallery" class="gallery"></div>
-  </section>
-
-  <section id="statement" class="statement-section">
-    <h2>Artist Statement</h2>
-    <!-- Replace with your own 2-4 sentences: what you make, why, what you're exploring -->
-    <p>
-      I work between two worlds — the immediacy of traditional drawing and painting, and the
-      precision of 3D modeling in Blender. Moving between the two keeps me honest: traditional
-      work teaches me to see and render form by hand, while 3D lets me build environments and
-      lighting that would be impossible to construct any other way. Across both, I'm drawn to
-      [replace with your actual focus — e.g. lighting, character design, still life, environments].
-    </p>
-  </section>
-
-  <section id="about" class="about-section">
-    <h2>About</h2>
-    <!-- Replace with a short bio: grade/year, how long you've been making art, any awards or exhibitions -->
-    <p>
-      I'm a student artist based in [your city], working primarily in [mediums]. I've been
-      drawing/painting for [X years] and started building in Blender in [year]. [Add anything
-      else worth mentioning — classes, awards, exhibitions, a favorite tool or technique.]
-    </p>
-  </section>
-
-  <section id="contact" class="contact-section">
-    <h2>Contact</h2>
-    <ul class="contact-list">
-      <!-- Replace these with your real links -->
-      <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
-      <li><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">Instagram</a></li>
-      <li><a href="resume.pdf" target="_blank" rel="noopener">Resume / CV (PDF)</a></li>
-    </ul>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <p>&copy; 2026 Shravan Dev</p>
-</footer>
-
-<div id="lightbox" class="lightbox" aria-hidden="true">
-  <button class="lightbox-close" aria-label="Close">&times;</button>
-  <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
-  <button class="lightbox-next" aria-label="Next">&#8250;</button>
-  <figure>
-    <img id="lightbox-img" src="" alt="">
-    <figcaption id="lightbox-caption"></figcaption>
-  </figure>
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
